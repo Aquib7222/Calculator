@@ -20,8 +20,8 @@ body{
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    box-shadow: 0 0 15px rgb(136, 13, 13), /* Dark grey outer shadow */
-    0 0 15px rgba(253, 2, 2, 0.8);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8), /* Light shadow */
+    0 4px 15px rgba(0, 0, 0, 0.8);
 }
 #show_output{
    background-color: rgb(255, 255, 255);
