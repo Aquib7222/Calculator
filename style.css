@@ -100,7 +100,7 @@ h1{
 @media (max-width:400px) and (min-width:0px){
     .container{
         width:300px;
-        height: 530px;
+        height: 600px;
         
     }
     #show_output{
@@ -124,7 +124,7 @@ h1{
 @media(max-width:500px) and (min-width:405px){
     .container{
         width:300px;
-        height: 560px;
+        height: 600px;
         
     }
     .header{
@@ -135,7 +135,7 @@ h1{
     }
     .digit_number{
         max-width: 280px;
-        margin-top: 10px;
+        margin-top: 2px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
