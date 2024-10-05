@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    
+    <main>
+        <div id="greeting" style="display: none;">
+                Thank You For Using My Calculator.
+        </div>
+        <div class="container">
+            <div class="header"><h1>Calculator</h1></div>
+            <div class="theme-toggle">
+                <button id="modeToggle" onclick="greetings()">Click me</button>
+            </div>
+            <div id="show_output">
+                
+            </div>
+            <div class="digit_number">
+                    <button class="box color_design" onclick="clearAll()">AC</button>
+                    <button class="box color_design" onclick="setOperator('%')">%</button>
+                    <button class="box color_design" onclick="clearLast()">C</button>
+                    <button class="box color_design" onclick="setOperator('/')">/</button>
+                    <button class="box" onclick="appendNumber(this)">7</button>
+                    <button class="box" onclick="appendNumber(this)">8</button>
+                    <button class="box" onclick="appendNumber(this)">9</button>
+                    <button class="box color_design" onclick="setOperator('*')">*</button>
+                    <button class="box" onclick="appendNumber(this)">4</button>
+                    <button class="box" onclick="appendNumber(this)">5</button>
+                    <button class="box" onclick="appendNumber(this)">6</button>
+                    <button class="box color_design" onclick="setOperator('-')">-</button>
+                    <button class="box" onclick="appendNumber(this)">1</button>
+                    <button class="box" onclick="appendNumber(this)">2</button>
+                    <button class="box" onclick="appendNumber(this)">3</button>
+                    <button class="box color_design" onclick="setOperator('+')">+</button>
+                    <button class="box" onclick="appendNumber(this)">00</button>
+                    <button class="box" onclick="appendNumber(this)">0</button>
+                    <button class="box" onclick="appendNumber(this)">.</button>
+                    <button class="box color_design" onclick="calculate()">=</button>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+   
+</body>
+</html>
