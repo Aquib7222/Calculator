@@ -103,16 +103,24 @@ h1{
         height: 600px;
         
     }
+    .header{
+        font-size: 15px;
+        margin-left: 15px;
+    }
     #show_output{
         width: 255px;
+        height: 100px;
+    }
+    #modeToggle{
+        margin-left: 15px;
     }
     .digit_number{
         max-width: 280px;
-        margin-top: 10px;
+        /* margin-top: 10px; */
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        padding: 5px;
+        /* padding: 5px; */
     }
     .box{
         width:50px;
@@ -129,17 +137,22 @@ h1{
     }
     .header{
         font-size: 15px;
+        margin-left: 15px;
     }
     #show_output{
         width: 255px;
+        height: 100px;
+    }
+    #modeToggle{
+        margin-left: 15px;
     }
     .digit_number{
         max-width: 280px;
-        margin-top: 2px;
+        
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        padding: 5px;
+        /* padding: 5px; */
     }
     .box{
         width:50px;
