@@ -12,7 +12,7 @@ body{
 }
 
 .container{
-    background-color: #FF5A5F;
+    background-color: #FE5F55;
     margin-top: 20px;
     width: 330px;
     display: flex;
@@ -20,9 +20,12 @@ body{
     justify-content: center;
     align-items: center;
     border-radius: 20px;
+    
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8), /* Light shadow */
     0 4px 15px rgba(0, 0, 0, 0.8);
+   
 }
+
 #show_output{
    background-color: rgb(255, 255, 255);
     width: 285px;
@@ -72,7 +75,7 @@ body{
     transform: scale(1.05);
 }
 .color_design{
-    background-color:#247BA0;
+    background-color:#1EA896;
     color:white;
 }
 
@@ -82,7 +85,7 @@ h1{
 }
 
 #modeToggle{
-    background-color: #247BA0;
+    background-color: #e90b85;
     color: white;
     padding: 8px;
     margin-left: 70px;
@@ -96,6 +99,12 @@ h1{
 }
 #modeToggle:hover{
     transform: scale(1.05);
+}
+button i{
+    border: none;
+}
+.hide_button{
+    background-color: #e90b85;
 }
 @media (max-width:400px) and (min-width:0px){
     .container{
@@ -112,7 +121,7 @@ h1{
         height: 100px;
     }
     #modeToggle{
-        margin-left: 15px;
+        margin-left: 50px;
     }
     .digit_number{
         max-width: 280px;
@@ -126,6 +135,7 @@ h1{
         width:50px;
         height: 50px;
         margin: 8px;
+        border-radius: 45%;
     }
     
 }
@@ -144,7 +154,7 @@ h1{
         height: 100px;
     }
     #modeToggle{
-        margin-left: 15px;
+        margin-left: 30px;
     }
     .digit_number{
         max-width: 280px;
@@ -158,5 +168,6 @@ h1{
         width:50px;
         height: 50px;
         margin: 8px;
+        border-radius: 45%;
     }
 }

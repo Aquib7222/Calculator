@@ -5,45 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
-   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     
     <main>
+        
         <div id="greeting" style="display: none;">
                 Thank You For Using My Calculator.
         </div>
         <div class="container">
             <div class="header"><h1>Calculator</h1></div>
             <div class="theme-toggle">
-                <button id="modeToggle" onclick="greetings()">Click me</button>
+                <button id="modeToggle" onclick="greetings()"><i class="fa-solid fa-square-root-variable"></i><i class="fa-solid fa-pi"></i><br>e<i class="fa-solid fa-equals"></i></button>
+               
             </div>
+            
             <div id="show_output">
                 
             </div>
             <div class="digit_number">
-                    <button class="box color_design" onclick="clearAll()">AC</button>
-                    <button class="box color_design" onclick="setOperator('%')">%</button>
-                    <button class="box color_design" onclick="clearLast()">C</button>
-                    <button class="box color_design" onclick="setOperator('/')">/</button>
+                
+                    
+                    <button class="box color_design" onclick="clearAll()"><i class="fa-solid fa-a"></i><i class="fa-solid fa-c"></i></button>
+                    <button class="box color_design" onclick="setOperator('%')"><i class="fa-solid fa-percent"></i></button>
+                    <button class="box color_design" onclick="clearLast()"><i class="fa-solid fa-c"></i></button>
+                    <button class="box color_design" onclick="setOperator('/')"><i class="fa-solid fa-divide"></i></button>
+                    <button class="box color_design hide_button" style="display: none;" onclick="advancedOperation('factorial')">!</button>
+                    
                     <button class="box" onclick="appendNumber(this)">7</button>
                     <button class="box" onclick="appendNumber(this)">8</button>
                     <button class="box" onclick="appendNumber(this)">9</button>
-                    <button class="box color_design" onclick="setOperator('*')">*</button>
+                    <button class="box color_design" onclick="setOperator('*')"><i class="fa-solid fa-xmark"></i></button>
+                    <button class="box color_design hide_button" onclick="advancedOperation('square')" style="display: none;" >^</button>
+                    
                     <button class="box" onclick="appendNumber(this)">4</button>
                     <button class="box" onclick="appendNumber(this)">5</button>
                     <button class="box" onclick="appendNumber(this)">6</button>
-                    <button class="box color_design" onclick="setOperator('-')">-</button>
+                    <button class="box color_design" onclick="setOperator('-')"><i class="fa-solid fa-minus"></i></button>
+                    <button class="box color_design hide_button" style="display: none;"onclick="advancedOperation('sqrt')" ><i class="fa-solid fa-square-root-variable"></i></button>
+                    
                     <button class="box" onclick="appendNumber(this)">1</button>
                     <button class="box" onclick="appendNumber(this)">2</button>
                     <button class="box" onclick="appendNumber(this)">3</button>
-                    <button class="box color_design" onclick="setOperator('+')">+</button>
+                    <button class="box color_design" onclick="setOperator('+')"><i class="fa-solid fa-plus"></i></button>
+                    <button class="box color_design hide_button" style="display: none;" onclick="advancedOperation('pi')">pi</button>
+                    
                     <button class="box" onclick="appendNumber(this)">00</button>
                     <button class="box" onclick="appendNumber(this)">0</button>
                     <button class="box" onclick="appendNumber(this)">.</button>
-                    <button class="box color_design" onclick="calculate()">=</button>
+                    <button class="box color_design" onclick="calculate()"><i class="fa-solid fa-equals"></i></button>
+                    <button class="box color_design hide_button" style="display: none;"onclick="advancedOperation('e')" >e</button>
             </div>
         </div>
+
+       
     </main>
     <script src="script.js"></script>
    
