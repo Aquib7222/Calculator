@@ -8,19 +8,19 @@ body{
     text-align: center;
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 .container{
     background-color: #FE5F55;
-    margin-top: 20px;
+    margin-top: 10px;
     width: 330px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    
+    height: auto;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8), /* Light shadow */
     0 4px 15px rgba(0, 0, 0, 0.8);
    
@@ -28,7 +28,7 @@ body{
 
 #show_output{
    background-color: rgb(255, 255, 255);
-    width: 285px;
+    width: 255px;
     height: 75px;
     margin-top: 20px;
     border-radius: 10px;
@@ -39,7 +39,7 @@ body{
     font-weight: 600;
     text-align: right;
     text-align: bottom;
-    padding-right: 5px;
+    padding-right: 10px;
     border: 1px solid black;
     padding-top: 10px;
     padding-right: 10px;
@@ -59,11 +59,12 @@ body{
 
 }
 .box{
-    width: 67px;
-    height: 65px;
+    width: 55px;
+    height:55px;
     border-radius: 10px;
     border: none;
-    margin-bottom: 10px;
+    margin: 5px;
+    margin-top: 10px;
     margin-left: 5px;
     font-size: 22px;
     cursor: pointer;
@@ -88,9 +89,9 @@ h1{
     background-color: #e90b85;
     color: white;
     padding: 8px;
-    margin-left: 70px;
+    margin-left: 250px;
     border-radius: 15px;
-    margin-top: 10px;
+    margin-top: px;
     border: none;
     cursor: pointer;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8), /* Light shadow */
@@ -106,6 +107,7 @@ button i{
 .hide_button{
     background-color: #e90b85;
 }
+
 @media (max-width:400px) and (min-width:0px){
     .container{
         width:300px;
@@ -121,7 +123,7 @@ button i{
         height: 100px;
     }
     #modeToggle{
-        margin-left: 50px;
+        margin-left: 250px;
     }
     .digit_number{
         max-width: 280px;
@@ -141,23 +143,31 @@ button i{
 }
 @media(max-width:500px) and (min-width:405px){
     .container{
-        width:300px;
-        height: 600px;
+        width:95%;
+        height: 90vh;
+        margin-left: 10px;
         
     }
     .header{
-        font-size: 15px;
-        margin-left: 15px;
+        font-size: 20px;
+        margin-left: -75px;
     }
     #show_output{
-        width: 255px;
-        height: 100px;
+        width: 80%;
+        height: 170px;
+        margin-top: -50px;
     }
-    #modeToggle{
-        margin-left: 30px;
+    /* .theme-toggle{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    } */
+    .theme-toggle{
+        margin-top: -130px;
+        margin-left: 50px;
     }
     .digit_number{
-        max-width: 280px;
+        width: 350px;
         
         display: flex;
         flex-wrap: wrap;
@@ -165,9 +175,10 @@ button i{
         /* padding: 5px; */
     }
     .box{
-        width:50px;
-        height: 50px;
-        margin: 8px;
-        border-radius: 45%;
+        width: 60px;
+        height: 65px;
+        
+        margin: 13px;
+        border-radius: 10px;
     }
 }

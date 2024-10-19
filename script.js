@@ -126,10 +126,12 @@ function greetings() {
                 button.style.width="40px";
                 button.style.height="40px";
                 
+                
             });
             box_button.forEach(function(boxes){
                 boxes.style.width="40px";
-                boxes.style.height="45px";
+                boxes.style.height="50px";
+               
             });
             
         } else {
@@ -139,8 +141,8 @@ function greetings() {
                 button.style.display="none"; 
             });
             box_button.forEach(function(boxes){
-                boxes.style.width="50px";
-                boxes.style.height="50px";
+                boxes.style.width="55px";
+                boxes.style.height="55px";
             });
         }
     }else if(window.innerWidth>500 && greeting.style.display==="none" ){
@@ -152,5 +154,3 @@ function greetings() {
         // button_text.textContent="More";
     }
 }
-
-
